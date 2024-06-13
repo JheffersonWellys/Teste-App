@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Space Barber Shop</string>
+<string name="T03_str_PromtRedefinirSenha">Insira seu cadastro de <b>E-mail</b> para receber um link para \nredefinição de senha.</string>
+
 </resources>
