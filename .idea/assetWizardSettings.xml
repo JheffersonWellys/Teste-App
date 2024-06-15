@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="inc_select" />
-                            <entry key="sourceFile" value="C:\Users\1020628\Documents\ProjetoGit\ProjetoIntegrador\App-Space-Barber-Shop" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="icn_sombrancelha" />
+                            <entry key="sourceFile" value="C:\Users\1020628\Downloads\icn_sombrancelha.svg" />
                           </map>
                         </option>
                       </PersistentState>

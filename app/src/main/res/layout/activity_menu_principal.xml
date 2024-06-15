@@ -74,6 +74,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
+        android:id="@+id/T04_LnLyt_EnderecoBarbearia"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_NomeBarbearia"
@@ -83,7 +84,44 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/T04_LnLyt_EnderecoBarbearia"
+        tools:layout_editor_absoluteX="0dp">
 
+        <ImageView
+            android:id="@+id/T04_ImgVw_barba"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="35dp"
+            android:background="@drawable/bg_opcoes"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icn_barba"/>
+
+        <ImageView
+            android:id="@+id/T04_ImgVw_cabelo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="35dp"
+            android:background="@drawable/bg_opcoes"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icn_cabelo" />
+        <ImageView
+            android:id="@+id/T04_ImgVw_sombrancelha"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_opcoes"
+            android:padding="35dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icn_sombrancelha" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
