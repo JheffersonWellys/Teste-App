@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity_Login">
+
+    <TextView
+        android:id="@+id/edit_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Login"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Cliente"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/T01_swthclienteBarbearia"
+        app:layout_constraintTop_toTopOf="@+id/T01_swthclienteBarbearia" />
+
+    <TextView
+        android:id="@+id/textViewBarbearia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Barbearia"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/T01_swthclienteBarbearia"
+        app:layout_constraintTop_toTopOf="@+id/T01_swthclienteBarbearia" />
+
+    <Switch
+        android:id="@+id/T01_swthclienteBarbearia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:layout_toStarOf="@id/textViewBarbearia"
+        android:minHeight="30dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:switchMinWidth="70dp"
+        android:thumbTint="@color/yellow"
+        android:trackTint="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Login"
+        tools:layout_editor_absoluteX="182dp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Container"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/icn_email"
+        android:drawablePadding="10dp"
+        android:hint="E-mail"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/T01_swthclienteBarbearia"
+        app:layout_constraintStart_toStartOf="@+id/T01_swthclienteBarbearia"
+        app:layout_constraintTop_toBottomOf="@+id/T01_swthclienteBarbearia" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Container"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/icn_senha"
+        android:drawablePadding="10dp"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/T01_slc_barber"
+        style="@style/button"
+        android:drawableLeft="@drawable/icn_tesoura"
+        android:layout_marginBottom="10dp"
+        android:text="Escolha uma barbearia..."
+        app:layout_constraintStart_toStartOf="@+id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha"/>
+
+
+    <TextView
+        android:id="@+id/edit_esqueceusenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Esqueceu sua senha?"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/T01_slc_barber"
+        app:layout_constraintTop_toBottomOf="@+id/T01_slc_barber" />
+
+    <TextView
+        android:id="@+id/edit_naopossuiconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="332dp"
+        android:hint="Não tem conta?"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edit_esqueceusenha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_esqueceusenha" />
+
+    <TextView
+        android:id="@+id/T01_Txtvw_clickAqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Clique aqui!"
+        android:textColorHint="@color/yellow"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/edit_esqueceusenha"
+        app:layout_constraintTop_toBottomOf="@+id/T01_slc_barber" />
+
+    <TextView
+        android:id="@+id/T01_Txtvw_clickAqui2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Clique aqui!"
+        android:textColorHint="@color/yellow"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/edit_naopossuiconta"
+        app:layout_constraintTop_toBottomOf="@+id/edit_esqueceusenha" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/T01btn_entrar"
+        style="@style/button"
+        android:layout_marginBottom="24dp"
+        android:text="Conectar-se"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
