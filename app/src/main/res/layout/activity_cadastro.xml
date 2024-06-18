@@ -8,7 +8,7 @@
     tools:context=".Activity_Cadastro">
 
     <TextView
-        android:id="@+id/edit_NovoCadastro"
+        android:id="@+id/T02_EdtTx_NovoCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewCliente"
+        android:id="@+id/T02_TxtVw_Cliente"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_alignParentStart="true"
@@ -31,11 +31,11 @@
         android:text="Cliente"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/T02_swth_clienteBarbearia"
-        app:layout_constraintTop_toTopOf="@+id/T02_swth_clienteBarbearia" />
+        app:layout_constraintEnd_toStartOf="@+id/T02_Swch_ClienteBarbearia"
+        app:layout_constraintTop_toTopOf="@+id/T02_Swch_ClienteBarbearia" />
 
     <TextView
-        android:id="@+id/textViewBarbearia"
+        android:id="@+id/T02_TxtVw_Barbearia"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_alignParentEnd="true"
@@ -45,11 +45,11 @@
         android:text="Barbearia"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/T02_swth_clienteBarbearia"
-        app:layout_constraintTop_toTopOf="@+id/T02_swth_clienteBarbearia" />
+        app:layout_constraintStart_toEndOf="@+id/T02_Swch_ClienteBarbearia"
+        app:layout_constraintTop_toTopOf="@+id/T02_Swch_ClienteBarbearia" />
 
     <Switch
-        android:id="@+id/T02_swth_clienteBarbearia"
+        android:id="@+id/T02_Swch_ClienteBarbearia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -63,97 +63,136 @@
         android:trackTint="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_NovoCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/T02_EdtTx_NovoCadastro" />
 
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/T02_EdtTx_Nome"
         style="@style/Conteiner"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icn_usuario"
         android:drawablePadding="10dp"
         android:hint="Nome"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/T02_swth_clienteBarbearia"
-        app:layout_constraintStart_toStartOf="@id/T02_swth_clienteBarbearia"
-        app:layout_constraintTop_toBottomOf="@id/T02_swth_clienteBarbearia" />
+        app:layout_constraintEnd_toEndOf="@id/T02_Swch_ClienteBarbearia"
+        app:layout_constraintStart_toStartOf="@id/T02_Swch_ClienteBarbearia"
+        app:layout_constraintTop_toBottomOf="@id/T02_Swch_ClienteBarbearia" />
 
     <EditText
-        android:id="@+id/edit_telefone"
+        android:id="@+id/T02_EdtTx_RazaoSocial"
+        style="@style/Conteiner"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/icn_razaosocial"
+        android:drawablePadding="10dp"
+        android:hint="Razão Social"
+        android:visibility="gone"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Nome"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Nome"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Nome" />
+
+    <EditText
+        android:id="@+id/T02_EdtTx_Telefone"
         style="@style/Conteiner"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_telefone"
         android:drawablePadding="10dp"
         android:hint="Telefone"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/edit_nome"
-        app:layout_constraintStart_toStartOf="@id/edit_nome"
-        app:layout_constraintTop_toBottomOf="@id/edit_nome" />
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_RazaoSocial"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_RazaoSocial"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_RazaoSocial" />
 
     <EditText
-        android:id="@+id/edit_cidade"
+        android:id="@+id/T02_EdtTx_Cnpj"
+        style="@style/Conteiner"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icn_cnpj"
+        android:drawablePadding="10dp"
+        android:hint="CNPJ"
+        android:visibility="gone"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Telefone"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Telefone"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Telefone" />
+
+    <EditText
+        android:id="@+id/T02_EdtTx_Cidade"
         style="@style/Conteiner"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_cidade"
         android:drawablePadding="10dp"
         android:hint="Cidade"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/edit_telefone"
-        app:layout_constraintStart_toStartOf="@id/edit_telefone"
-        app:layout_constraintTop_toBottomOf="@id/edit_telefone" />
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Cnpj"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Cnpj"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Cnpj" />
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/T02_EdtTx_Endereco"
+        style="@style/Conteiner"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icn_endereco"
+        android:drawablePadding="10dp"
+        android:hint="Endereço"
+        android:visibility="gone"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Cidade"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Cidade"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Cidade" />
+
+    <EditText
+        android:id="@+id/T02_EdtTx_Email"
         style="@style/Conteiner"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_email"
         android:drawablePadding="10dp"
         android:hint="Email"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/edit_cidade"
-        app:layout_constraintStart_toStartOf="@id/edit_cidade"
-        app:layout_constraintTop_toBottomOf="@id/edit_cidade" />
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Endereco"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Endereco"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Endereco" />
 
     <EditText
-        android:id="@+id/edit_senha"
+        android:id="@+id/T02_EdtTx_Senha"
         style="@style/Conteiner"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_senha"
         android:drawablePadding="10dp"
         android:hint="Senha"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/edit_email"
-        app:layout_constraintStart_toStartOf="@id/edit_email"
-        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+        app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Email"
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Email"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Email" />
 
     <TextView
 
-        android:id="@+id/ja_cadastrado"
+        android:id="@+id/T02_TxtVw_JaPossuiConta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Ja possui uma conta?"
-        android:textColorHint="@color/white"
+        android:text="Ja possui uma conta?"
+        android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/edit_senha"
-        app:layout_constraintTop_toBottomOf="@id/edit_senha" />
+        app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Senha"
+        app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Senha" />
 
     <TextView
-        android:id="@+id/T02_TxtVw_cliqueAqui"
+        android:id="@+id/T02_TxtVw_CliqueAqui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:hint="Clique aqui!"
-        android:textColorHint="@color/yellow"
+        android:text="Clique aqui!"
+        android:textColor="@color/yellow"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/ja_cadastrado"
-        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+        app:layout_constraintStart_toEndOf="@id/T02_TxtVw_JaPossuiConta"
+        app:layout_constraintTop_toBottomOf="@+id/T02_EdtTx_Senha" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/T02_btn_entrar"
+        android:id="@+id/T02_AppCmpBtn_Entrar"
         style="@style/Button"
         android:layout_marginBottom="20dp"
         android:text="Cadastrar"
@@ -161,7 +200,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
