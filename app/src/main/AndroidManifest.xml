@@ -12,7 +12,15 @@
         android:theme="@style/Theme.SpaceBarberShop"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Activity_Cadastro"
+=======
+<<<<<<< HEAD
+            android:name=".Activity_Intro"
+=======
+            android:name=".Activity_RecuperarSenha"
+>>>>>>> feature/tela-recuperar-senha
+>>>>>>> 37cd648d81c5386b1810cdbdc9a6785b59bf8b4c
             android:exported="false" />
         <activity
             android:name=".MainActivity"
