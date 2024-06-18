@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <style name="Conteiner">
         <item name="android:maxLength">40</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:background">@drawable/bg_edt_black</item>
+=======
+    <style name="Container">
+        <item name="android:maxLength">40</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_etd_black</item>
+>>>>>>> feature/tela-login
         <item name="android:padding">10dp</item>
         <item name="android:textSize">12sp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:layout_marginTop">15dp</item>
+<<<<<<< HEAD
     </style>
 
     <style name="Button">
+=======
+
+    </style>
+
+    <style name="button">
+>>>>>>> feature/tela-login
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">20dp</item>
@@ -21,6 +36,7 @@
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:background">@drawable/bg_btn_yellow</item>
         <item name="android:padding">10dp</item>
+<<<<<<< HEAD
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
@@ -30,3 +46,12 @@
 
 
 </resources>
+=======
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="color">@color/yellow</item>
+
+    </style>
+</resources>
+>>>>>>> feature/tela-login

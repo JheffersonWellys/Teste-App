@@ -12,6 +12,7 @@
                     <value>
                       <PersistentState>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
@@ -46,6 +47,13 @@
                             <entry key="sourceFile" value="C:\Users\396783\Documents\ProjetoGit\ProjetoIntegrador\App-Space-Barber-Shop" />
 >>>>>>> feature/tela-recuperar-senha
 >>>>>>> 37cd648d81c5386b1810cdbdc9a6785b59bf8b4c
+=======
+                        <option name="values">
+                          <map>
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="vec_logo" />
+                            <entry key="sourceFile" value="C:\Users\993678\Downloads\vec_logo.svg" />
+>>>>>>> feature/tela-login
                           </map>
                         </option>
                       </PersistentState>
