@@ -11,11 +11,33 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+<<<<<<< HEAD
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="outputName" value="icn_logo" />
                             <entry key="sourceFile" value="C:\Users\1019094\Downloads\icn_logo.svg" />
+=======
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../../../Default/AppData/Local/Android/Sdk/icons/material/materialiconsoutlined/email/outline_email_24.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputName" value="ic_edt_yellow" />
+                            <entry key="sourceFile" value="C:\Users\396783\Documents\ProjetoGit\ProjetoIntegrador\App-Space-Barber-Shop" />
+>>>>>>> feature/tela-recuperar-senha
                           </map>
                         </option>
                       </PersistentState>
