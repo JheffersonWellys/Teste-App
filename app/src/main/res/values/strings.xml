@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Space Barber Shop</string>
+
+    <string name= "T04_Str_Menu">MENU</string>
+    <string name="T04_Str_NomeBarbearia">Barbearia 01</string>
+    <string name="T04_Str_Endereço">Endereçio da Barbearia</string>
 </resources>
+

@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="MENU"
+            android:text="@string/T04_Str_Menu"
             android:layout_marginStart="10dp"
             android:gravity="center_vertical"
             app:layout_constraintStart_toEndOf="@id/T04_ImgVw_menu"
@@ -49,7 +49,7 @@
         <TextView
             android:id="@+id/T04_TxtVw_NomeBarbearia"
             android:layout_width="wrap_content"
-            android:text="Barbearia 01"
+            android:text="@string/T04_Str_NomeBarbearia"
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textColor="@color/white"
@@ -77,11 +77,15 @@
         android:id="@+id/T04_LnLyt_EnderecoBarbearia"
         android:layout_width="match_parent"
         android:layout_height="25dp"
+        android:background="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_NomeBarbearia"
-        android:background="@color/gray">
+        tools:layout_editor_absoluteX="0dp">
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/T04_Str_Endereço"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <LinearLayout
