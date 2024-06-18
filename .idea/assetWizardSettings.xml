@@ -11,6 +11,24 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <option name="values">
+                          <map>
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="icn_cnpj" />
+                            <entry key="sourceFile" value="C:\Users\785371\Downloads\icn_cnpj.svg" />
+=======
+<<<<<<< HEAD
+                        <option name="values">
+                          <map>
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="icn_logo" />
+                            <entry key="sourceFile" value="C:\Users\1019094\Downloads\icn_logo.svg" />
+=======
+>>>>>>> f72d4d731d2d35872f491391b9eb143e1a10f820
                         <option name="children">
                           <map>
                             <entry key="clipartAsset">
@@ -18,7 +36,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="url" value="file:/$PROJECT_DIR$/../../../../../Default/AppData/Local/Android/Sdk/icons/material/materialicons/tune/baseline_tune_24.xml" />
+=======
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../../../Default/AppData/Local/Android/Sdk/icons/material/materialiconsoutlined/email/outline_email_24.xml" />
+>>>>>>> f72d4d731d2d35872f491391b9eb143e1a10f820
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +50,23 @@
                         </option>
                         <option name="values">
                           <map>
+<<<<<<< HEAD
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="outputName" value="icn_sombrancelha" />
                             <entry key="sourceFile" value="C:\Users\1020628\Downloads\icn_sombrancelha.svg" />
+=======
+                            <entry key="outputName" value="ic_edt_yellow" />
+                            <entry key="sourceFile" value="C:\Users\396783\Documents\ProjetoGit\ProjetoIntegrador\App-Space-Barber-Shop" />
+>>>>>>> feature/tela-recuperar-senha
+>>>>>>> 37cd648d81c5386b1810cdbdc9a6785b59bf8b4c
+=======
+                        <option name="values">
+                          <map>
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="vec_logo" />
+                            <entry key="sourceFile" value="C:\Users\993678\Downloads\vec_logo.svg" />
+>>>>>>> feature/tela-login
+>>>>>>> f72d4d731d2d35872f491391b9eb143e1a10f820
                           </map>
                         </option>
                       </PersistentState>
