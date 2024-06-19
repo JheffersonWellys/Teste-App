@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/T02_EdtTx_NovoCadastro"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:hint="Novo Cadastro"
@@ -18,6 +18,7 @@
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -68,7 +69,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Nome"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icn_usuario"
         android:drawablePadding="10dp"
@@ -80,7 +81,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_RazaoSocial"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icn_razaosocial"
         android:drawablePadding="10dp"
@@ -93,7 +94,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Telefone"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_telefone"
         android:drawablePadding="10dp"
@@ -105,7 +106,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Cnpj"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_cnpj"
         android:drawablePadding="10dp"
@@ -118,7 +119,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Cidade"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_cidade"
         android:drawablePadding="10dp"
@@ -130,7 +131,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Endereco"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_endereco"
         android:drawablePadding="10dp"
@@ -143,7 +144,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Email"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_email"
         android:drawablePadding="10dp"
@@ -155,7 +156,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Senha"
-        style="@style/Conteiner"
+        style="@style/container_cadastro"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_senha"
         android:drawablePadding="10dp"
@@ -193,7 +194,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/T02_AppCmpBtn_Entrar"
-        style="@style/Button"
+        style="@style/button"
         android:layout_marginBottom="20dp"
         android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
