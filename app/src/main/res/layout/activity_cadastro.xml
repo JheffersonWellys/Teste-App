@@ -76,6 +76,7 @@
         android:drawablePadding="10dp"
         android:hint="Nome"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_Swch_ClienteBarbearia"
         app:layout_constraintStart_toStartOf="@id/T02_Swch_ClienteBarbearia"
         app:layout_constraintTop_toBottomOf="@id/T02_Swch_ClienteBarbearia" />
@@ -89,6 +90,7 @@
         android:hint="Razão Social"
         android:visibility="gone"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Nome"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Nome"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Nome" />
@@ -101,6 +103,7 @@
         android:drawablePadding="10dp"
         android:hint="Telefone"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_RazaoSocial"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_RazaoSocial"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_RazaoSocial" />
@@ -114,6 +117,7 @@
         android:hint="CNPJ"
         android:visibility="gone"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Telefone"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Telefone"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Telefone" />
@@ -126,6 +130,7 @@
         android:drawablePadding="10dp"
         android:hint="Cidade"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Cnpj"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Cnpj"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Cnpj" />
@@ -139,6 +144,7 @@
         android:hint="Endereço"
         android:visibility="gone"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Cidade"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Cidade"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Cidade" />
@@ -151,6 +157,8 @@
         android:drawablePadding="10dp"
         android:hint="Email"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Endereco"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Endereco"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Endereco" />
@@ -163,6 +171,8 @@
         android:drawablePadding="10dp"
         android:hint="Senha"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="@id/T02_EdtTx_Email"
         app:layout_constraintStart_toStartOf="@id/T02_EdtTx_Email"
         app:layout_constraintTop_toBottomOf="@id/T02_EdtTx_Email" />
