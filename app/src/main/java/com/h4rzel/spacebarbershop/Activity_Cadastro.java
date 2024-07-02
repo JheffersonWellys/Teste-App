@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -34,6 +35,9 @@ public class Activity_Cadastro extends AppCompatActivity {
     private Button T02_AppCmpBtn_Entrar;
     private Switch T02_Swch_ClienteBarbearia;
 
+    private String UserId;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,12 @@ public class Activity_Cadastro extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
 
         IniciarComponentes();
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = auth.getCurrentUser();
+
+        if (currentUser != null){
+            UserId = currentUser.getUid();
+        }
 
         T02_AppCmpBtn_Entrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,7 +180,7 @@ public class Activity_Cadastro extends AppCompatActivity {
         cliente.put("telefone",telefone);
         cliente.put("cidade",cidade);
         cliente.put("email",email);
-        db.collection("usuarios").document("clientes").collection("clientes").add(cliente).addOnSuccessListener(documentReference -> {
+        db.collection("usuarios").document("cliente").collection("clientes").add(cliente).addOnSuccessListener(documentReference -> {
             Log.d("TAG","cliente adicionado com id: " + documentReference.getId());
         })
                 .addOnFailureListener(e -> {
@@ -185,7 +195,7 @@ public class Activity_Cadastro extends AppCompatActivity {
         barbearia.put("cnpj",cnpj);
         barbearia.put("endereco",endereco);
         barbearia.put("email",email);
-        db.collection("usuarios").document("barbearias").collection("barbearias").add(barbearia).addOnSuccessListener(documentReference -> {
+        db.collection("usuarios").document("barbearia").collection("barbearias").add(barbearia).addOnSuccessListener(documentReference -> {
                     Log.d("TAG","Barbearia adicionada com id: " + documentReference.getId());
                 })
                 .addOnFailureListener(e -> {
