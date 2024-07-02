@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:403248657007:android:4186aaf381ec9d62bd139a",
+        "mobilesdk_app_id": "1:403248657007:android:b1c5535184c7cae6bd139a",
         "android_client_info": {
-          "package_name": "com.spacebarbershop"
+          "package_name": "com.h4rzel.spacebarbershop"
         }
       },
       "oauth_client": [],
