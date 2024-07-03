@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/T04_CstLYt_MenuPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/T04_CstLYt_MenuPrincipal"
     tools:context=".Activity_MenuPrincipal">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,7 +35,10 @@
             android:layout_marginStart="10dp"
             android:gravity="center_vertical"
             android:text="@string/T04_Str_Menu"
+            android:textAllCaps="false"
             android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/T04_ImgVw_Menu"
             tools:layout_editor_absoluteY="10dp" />
 
@@ -45,26 +48,24 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/T04_CstLYt_NomeBarbearia"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_Menu"
+        android:layout_height="50dp"
         android:background="@color/yellow"
-        >
+        app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_Menu">
 
         <TextView
             android:id="@+id/T04_TxtVw_NomeBarbearia"
             android:layout_width="wrap_content"
-            android:text="@string/T04_Str_NomeBarbearia"
-            android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-
-            android:layout_marginStart="10dp"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/T04_Str_NomeBarbearia"
+            android:textColor="@color/black"
+
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/T04_ImgVw_SelecionarBarbearia"
@@ -75,23 +76,27 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-            
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/T04_LnLyt_EnderecoBarbearia"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@color/orange"
-        app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_NomeBarbearia"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="30dp"
+        android:background="#F5F5F5"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/T04_CstLYt_NomeBarbearia">
 
         <TextView
             android:id="@+id/T04_TxVw_Endereco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/T04_Str_Endereço"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -99,38 +104,69 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:padding="10dp"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/T04_LnLyt_EnderecoBarbearia"
         tools:layout_editor_absoluteX="0dp">
 
-        <ImageView
-            android:id="@+id/T04_ImgVw_Barba"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:padding="35dp"
-            android:background="@drawable/bg_opcoes"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/icn_barba"/>
+        <LinearLayout
+            android:id="@+id/T04_LnLyt_OpcoesPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/T04_ImgVw_Cabelo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:padding="35dp"
-            android:background="@drawable/bg_opcoes"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/icn_cabelo" />
-        <ImageView
-            android:id="@+id/T04_ImgVw_Sombrancelha"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@drawable/bg_opcoes"
-            android:padding="35dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/icn_sombrancelha" />
+            <ImageView
+                android:id="@+id/T04_ImgVw_Barba"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opcoes"
+                android:padding="35dp"
+                android:src="@drawable/icn_barba" />
+
+            <View
+                android:id="@+id/T04_Vw_DivisorOpcoesPrimarias"
+                android:layout_width="16dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:id="@+id/T04_ImgVw_Cabelo"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opcoes"
+                android:padding="35dp"
+                android:src="@drawable/icn_cabelo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/T04_LnLyt_OpcoesSecundaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/T04_ImgVw_Bigode"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opcoes"
+                android:padding="35dp"
+                android:src="@drawable/icn_sombrancelha" />
+
+            <View
+                android:id="@+id/T04_Vw_DivisorOpcoesSecundarias"
+                android:layout_width="16dp"
+                android:layout_height="0dp" />
+
+            <View
+                android:id="@+id/T04_Vw_OpcaoDesativada"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
