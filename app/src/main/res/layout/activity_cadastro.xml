@@ -15,7 +15,7 @@
         android:hint="Novo Cadastro"
         android:textAlignment="center"
         android:textColorHint="@color/white"
-        android:textSize="35sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,28 +24,30 @@
     <TextView
         android:id="@+id/T02_TxtVw_Cliente"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="16dp"
         android:gravity="center_vertical"
         android:text="Cliente"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/T02_Swch_ClienteBarbearia"
         app:layout_constraintEnd_toStartOf="@+id/T02_Swch_ClienteBarbearia"
         app:layout_constraintTop_toTopOf="@+id/T02_Swch_ClienteBarbearia" />
 
     <TextView
         android:id="@+id/T02_TxtVw_Barbearia"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="16dp"
         android:gravity="center_vertical"
         android:text="Barbearia"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/T02_Swch_ClienteBarbearia"
         app:layout_constraintStart_toEndOf="@+id/T02_Swch_ClienteBarbearia"
         app:layout_constraintTop_toTopOf="@+id/T02_Swch_ClienteBarbearia" />
 
@@ -70,7 +72,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Nome"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icn_usuario"
         android:drawablePadding="10dp"
@@ -83,7 +85,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_RazaoSocial"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icn_razaosocial"
         android:drawablePadding="10dp"
@@ -97,7 +99,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Telefone"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_telefone"
         android:drawablePadding="10dp"
@@ -110,7 +112,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Cnpj"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_cnpj"
         android:drawablePadding="10dp"
@@ -124,7 +126,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Cidade"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_cidade"
         android:drawablePadding="10dp"
@@ -137,7 +139,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Endereco"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_endereco"
         android:drawablePadding="10dp"
@@ -151,7 +153,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Email"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_email"
         android:drawablePadding="10dp"
@@ -165,7 +167,7 @@
 
     <EditText
         android:id="@+id/T02_EdtTx_Senha"
-        style="@style/container_cadastro"
+        style="@style/container_edittext"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/icn_senha"
         android:drawablePadding="10dp"
