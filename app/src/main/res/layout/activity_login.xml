@@ -80,8 +80,9 @@
         android:drawableLeft="@drawable/icn_email"
         android:drawablePadding="10dp"
         android:hint="E-mail"
-        android:inputType="numberPassword"
+        android:inputType="textEmailAddress"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/T01_Swch_ClienteBarbearia"
         app:layout_constraintStart_toStartOf="@+id/T01_Swch_ClienteBarbearia"
         app:layout_constraintTop_toBottomOf="@+id/T01_Swch_ClienteBarbearia" />
@@ -98,6 +99,7 @@
         android:padding="10dp"
         android:inputType="numberPassword"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/T01_EdtTx_Email"
         app:layout_constraintStart_toStartOf="@+id/T01_EdtTx_Email"
         app:layout_constraintTop_toBottomOf="@+id/T01_EdtTx_Email"

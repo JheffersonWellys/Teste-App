@@ -40,13 +40,14 @@
 
     <EditText
         android:id="@+id/T03_EdtTxt_Email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:layout_width="380sp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:textColor="@color/white"
         android:autofillHints="emailAddress"
-        android:text="E-mail"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
         android:drawableLeft="@drawable/ic_edt_yellow"
         android:drawablePadding="10dp"
         android:background="@drawable/bg_edt_email"
