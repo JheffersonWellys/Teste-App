@@ -16,6 +16,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="20dp"
         android:text="@string/T03_str_RedefinirSenha"
+        android:textAllCaps="false"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24dp"
