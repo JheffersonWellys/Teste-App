@@ -166,7 +166,7 @@ public class Activity_Cadastro extends AppCompatActivity {
          email = T02_EdtTx_Email.getText().toString();
 
          if (T02_Swch_ClienteBarbearia.isChecked()) {
-         CriarCadastroBarbearia();
+             CriarCadastroBarbearia();
          } else {
              CriarCadastroCliente();
          }
@@ -180,6 +180,7 @@ public class Activity_Cadastro extends AppCompatActivity {
         cliente.put("telefone",telefone);
         cliente.put("cidade",cidade);
         cliente.put("email",email);
+        cliente.put("tipo-cadastro","cliente");
         db.collection("usuarios").document("cliente").collection("clientes").add(cliente).addOnSuccessListener(documentReference -> {
             Log.d("TAG","cliente adicionado com id: " + documentReference.getId());
         })
@@ -195,6 +196,7 @@ public class Activity_Cadastro extends AppCompatActivity {
         barbearia.put("cnpj",cnpj);
         barbearia.put("endereco",endereco);
         barbearia.put("email",email);
+        barbearia.put("tipo-cadastro","barbearia");
         db.collection("usuarios").document("barbearia").collection("barbearias").add(barbearia).addOnSuccessListener(documentReference -> {
                     Log.d("TAG","Barbearia adicionada com id: " + documentReference.getId());
                 })
